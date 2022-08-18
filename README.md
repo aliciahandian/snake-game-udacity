@@ -20,8 +20,13 @@ This project features a classic snake game program, with the added feature of a 
 
 6. scoreboard.h and scoreboard.cpp : These files define the ScoreBoard class which creates and reads a text file where previous score entries are stored. The ScoreBoard class uses the enum ScoreEntry in order to parse previously recorded data and return the top three highest scores upon ending the snake game.
 
+EXPECTED BEHAVIOR: When this program runs successfully, you will be able to play the classic snake game. You will be able to control the snake's movements using the arrow keys, and you will grow as you eat food. You will lose the game when you accidentally collide with your snake's body instead of the food. Upon losing, the program will prompt you for your name. Upon entering your name, your score will be recorded. The scoreboard will display the top three highest scores, and then the program will end. 
+
 
 ## Rubric Points Addressed
+
+
+This Udacity Capstone project is expected to hit the following Rubric points:
 
 
 
