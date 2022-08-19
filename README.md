@@ -30,10 +30,10 @@ This Udacity Capstone project is expected to hit the following Rubric points:
 
 REQUIRED:
 
-*A README with instructions is included with the project.
-*The README indicates which project is chosen.
-*The README includes information about each rubric point addressed.
-*The submission must compile and run.
+* A README with instructions is included with the project.
+* The README indicates which project is chosen.
+* The README includes information about each rubric point addressed.
+* The submission must compile and run.
 
 
 OTHER CRITERIA (MUST SATISFY AT LEAST 5 FROM THE RUBRIC)
