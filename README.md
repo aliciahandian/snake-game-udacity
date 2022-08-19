@@ -18,7 +18,7 @@ This project features a classic snake game program, with the added feature of a 
 
 5. controller.h and controller.cpp : These files define the Controller class. This class handles keyboard input using the SDL libary, and it sets the snake's direction based on the input.
 
-6. scoreboard.h and scoreboard.cpp : These files define the ScoreBoard class which creates and reads a text file where previous score entries are stored. The ScoreBoard class uses the struct ScoreEntry in order to parse previously recorded data and return the top three highest scores upon ending the snake game.
+6. scoreboard.h and scoreboard.cpp : These files define the ScoreBoard class which creates and reads a text file where previous score entries are stored. The ScoreBoard class uses the enum ScoreEntry in order to parse previously recorded data and return the top three highest scores upon ending the snake game.
 
 EXPECTED BEHAVIOR: When this program runs successfully, you will be able to play the classic snake game. You will be able to control the snake's movements using the arrow keys, and you will grow as you eat food. You will lose the game when you accidentally collide with your snake's body instead of the food. Upon losing, the program will prompt you for your name. Upon entering your name, your score will be recorded. The scoreboard will display the top three highest scores, and then the program will end. 
 
@@ -28,7 +28,37 @@ EXPECTED BEHAVIOR: When this program runs successfully, you will be able to play
 
 This Udacity Capstone project is expected to hit the following Rubric points:
 
+REQUIRED:
 
+*A README with instructions is included with the project.
+*The README indicates which project is chosen.
+*The README includes information about each rubric point addressed.
+*The submission must compile and run.
+
+
+OTHER CRITERIA (MUST SATISFY AT LEAST 5 FROM THE RUBRIC)
+
+1. The project demonstrates an understanding of C++ functions and control structures.
+      * line 49 / line 61 / line 63 / line 68 in scoreboard.cpp (control structures)
+      * line 12 / line 26 / line 27 / line 31 in scoreboard.h (functions)
+
+2. The project reads data from a file and process the data, or the program writes data to a file.
+      * line 34 / line 63 - 75 in scoreboard.cpp 
+
+3. The project accepts user input and processes the input.
+      * line 28 - 31 / line 37 in main.cpp 
+
+4. The project uses Object Oriented Programming techniques.
+      * all lines from scoreboard.h and scoreboard.cpp
+
+5. Classes use appropriate access specifiers for class members. 
+      * line 20 / line 29 in scoreboard.h
+
+6. Classes abstract implementation details from their interfaces.
+      * specifications met throughout scoreboard.cpp as each member function is thoroughly documented - line 56 is a specific example of abstraction. The sortScoreBoard() function is abstracted away from the user and called within the printScoreBoard() function.
+
+7. Classes encapsulate behavior. 
+      * specifications met throughout scoreboard.cpp/scoreboard.h. Instead of formatting the scores and opening/reading the file from main.cpp this feature is organized into a class with the appropriate getters and setters. This hides the implementation from the user and prevents excess meddling when it is not needed. 
 
 
 ## Dependencies for Running Locally
